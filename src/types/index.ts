@@ -21,3 +21,9 @@ export type faqType = {
   title: string;
   desc: string;
 };
+
+export type formasiType = {
+  id: number;
+  department: string;
+  requirements: string[];
+};
