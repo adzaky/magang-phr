@@ -1,3 +1,9 @@
+export type NavListType = {
+  id: number;
+  href: string;
+  title: string;
+};
+
 export type benefitType = {
   id: number;
   icon: React.ReactNode;

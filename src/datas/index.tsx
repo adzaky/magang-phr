@@ -1,5 +1,43 @@
-import { benefitType, faqType, formasiType, stepType, timelineProgramType } from "@/types";
+import { benefitType, faqType, formasiType, NavListType, stepType, timelineProgramType } from "@/types";
 import { Briefcase, House, Medal, Wallet } from "lucide-react";
+
+export const navList: NavListType[] = [
+  {
+    id: 1,
+    href: "/#home",
+    title: "Home",
+  },
+  {
+    id: 2,
+    href: "#tentang",
+    title: "Tentang",
+  },
+  {
+    id: 3,
+    href: "/#tahapan",
+    title: "Tahapan Seleksi",
+  },
+  {
+    id: 4,
+    href: "/#timeline",
+    title: "Timeline",
+  },
+  {
+    id: 5,
+    href: "/formasi-kebutuhan",
+    title: "Formasi",
+  },
+  {
+    id: 6,
+    href: "/#faq",
+    title: "FAQ",
+  },
+  {
+    id: 7,
+    href: "/#kontak",
+    title: "Kontak",
+  },
+];
 
 export const benefitProgram: benefitType[] = [
   {

@@ -1,11 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { navList } from "./constant";
-import NavbarList from "./NavbarList";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
+import NavbarList from "./nav-list";
+import NavbarMobile from "./navbar-mobile";
+import { navList } from "@/datas";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -20,14 +21,17 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-3">
         <div className="flex items-center">
-          <Link href="/">
-            <Image
-              width={140}
-              height={40}
-              alt="Logo"
-              src={`${isActive ? "/phr-logo-color.png" : "/phr-logo-white.png"}`}
-            />
-          </Link>
+          <div className="flex items-center gap-2">
+            <NavbarMobile />
+            <Link href="/">
+              <Image
+                width={140}
+                height={40}
+                alt="Logo"
+                src={`${isActive ? "/phr-logo-color.png" : "/phr-logo-white.png"}`}
+              />
+            </Link>
+          </div>
           <nav className="ml-4 hidden items-center gap-1 md:flex">
             {navList.map(({ id, href, title }) => (
               <NavbarList key={id} href={href} title={title} />
