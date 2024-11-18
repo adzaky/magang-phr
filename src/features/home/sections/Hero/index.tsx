@@ -1,11 +1,13 @@
 import Image from "next/image";
+import heroMaleFemale from "@/assets/hero-malefemale.png";
+import heroMaleFemale2 from "@/assets/hero-malefemale2.png";
 
 const HeroSection = () => {
   return (
     <section className="mx-auto max-w-screen-xl pt-24">
       <div className="mb-8 mt-4 flex items-center gap-4 px-4 md:mt-24">
         <div className="hidden lg:block">
-          <Image width={500} height={0} alt="Hero" src="/hero-malefemale.png" className="h-auto" />
+          <Image width={500} height={0} alt="Hero" src={heroMaleFemale} className="h-auto" />
         </div>
         <div className="flex w-full flex-col justify-center gap-4 text-center lg:mb-44">
           <div>
@@ -28,7 +30,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <Image width={500} height={0} alt="Hero" src="/hero-malefemale2.png" className="h-auto" />
+          <Image width={500} height={0} alt="Hero" src={heroMaleFemale2} className="h-auto" />
         </div>
       </div>
     </section>

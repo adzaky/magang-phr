@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import NavbarList from "./nav-list";
 import NavbarMobile from "./navbar-mobile";
 import { navList } from "@/datas";
+import phrLogoColor from "@/assets/phr-logo-color.png";
+import phrLogoWhite from "@/assets/phr-logo-white.png";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -24,12 +26,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <NavbarMobile />
             <Link href="/">
-              <Image
-                width={140}
-                height={40}
-                alt="Logo"
-                src={`${isActive ? "/phr-logo-color.png" : "/phr-logo-white.png"}`}
-              />
+              <Image width={140} height={40} alt="Logo" src={isActive ? phrLogoColor : phrLogoWhite} />
             </Link>
           </div>
           <nav className="ml-4 hidden items-center gap-1 md:flex">

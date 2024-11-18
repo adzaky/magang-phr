@@ -1,6 +1,7 @@
-import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Phone } from "lucide-react";
+import phrLogoWhite from "@/assets/phr-logo-white.png";
 
 const KontakSection = () => {
   return (
@@ -8,7 +9,7 @@ const KontakSection = () => {
       <div className="mx-auto grid max-w-screen-xl grid-rows-2 gap-4 px-6 py-6 text-white md:grid-cols-3 md:grid-rows-1 md:gap-8 md:py-12">
         <div className="flex flex-col gap-8">
           <Link href="/">
-            <Image width={150} height={50} alt="Logo" src="/phr-logo-white.png" />
+            <Image width={150} height={50} alt="Logo" src={phrLogoWhite} />
           </Link>
           <h2 className="text-balance text-xl font-bold md:w-2/3">
             Program Magang Kerja PT Pertamina Hulu Rokan Wilayah Kerja Rokan
