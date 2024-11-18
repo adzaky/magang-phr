@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "bun format && git add -A ."
+      "pre-commit": "pnpm format && git add -A ."
     }
   },
   "lint-staged": {
